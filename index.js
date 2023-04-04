@@ -42,6 +42,7 @@ client.on("messageCreate", async function (message) {
     return message.reply(content);
 
   } catch (err) {
+    console.error("Error:", err);
     return message.reply(
       "Oops, looks like I errored out. Contact my human overload, @Chii#0615, or just try again later."
     );
