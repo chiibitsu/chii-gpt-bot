@@ -3,6 +3,7 @@ import { Client, GatewayIntentBits } from "discord.js";
 import { Configuration, OpenAIApi } from "openai";
 
 dotenv.config();
+const keepAlive = require("./keep_alive");
 
 const client = new Client({
   intents: [
