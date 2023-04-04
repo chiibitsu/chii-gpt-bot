@@ -49,4 +49,4 @@ client.on("messageCreate", async function (message) {
   }
 });
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env['BOT_TOKEN']);
