@@ -1,14 +1,8 @@
-import express from 'express';
-const app = express();
+import http from 'http';
 
-app.get("/", (req, res) => {
-  res.send("ChiiGPT is awake!");
-});
+const server = http.createServer((req, res) => {
+  res.write("I'm alive");
+  res.end();
+}).listen(8080);
 
-function keepAlive() {
-  app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-  });
-}
-
-export default keepAlive;
+export default server;
