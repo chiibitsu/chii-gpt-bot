@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import { Client, GatewayIntentBits } from "discord.js";
 import { Configuration, OpenAIApi } from "openai";
-import keepAlive from './keep_alive.js';
+import keepAlive from './keep_alive_gpt.js';
 
 dotenv.config();
 
